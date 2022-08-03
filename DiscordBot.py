@@ -41,12 +41,12 @@ async def on_message(message):
         str_list = str_list[1].split('?')
         song_id = [str_list[0]]  # song ids must be in an array for spotipy
 
-        if message.channel.id == 999020947141046423:  # 'Olive Garden' server song recs
-            playlist_id = '79v7GklSr4IHgkpunO3PJX'
+        if message.channel.id == 'channel-id:  # 'Olive Garden' server song recs
+            playlist_id = 'playlist-id'
             sp.playlist_add_items(playlist_id, song_id)
 
-        elif message.channel.id == 999849942023675994:  # 'Pizza Hut' server song recs
-            playlist_id = '0wCWdOhSHgQazopQDonV6L'
+        elif message.channel.id == 'channel-id':  # 'Pizza Hut' server song recs
+            playlist_id = 'playlist-id'
             sp.playlist_add_items(playlist_id, song_id)
 
         else:
